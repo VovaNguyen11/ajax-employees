@@ -1,0 +1,22 @@
+{
+    "success": true,
+    "data": [{
+        "name": "Lisa",
+        "status": "in"
+    }, {
+        "name": "Andrew",
+        "status": "in"
+    }, {
+        "name": "Michael",
+        "status": "out"
+    }, {
+        "name": "Robert",
+        "status": "out"
+    }, {
+        "name": "Layla",
+        "status": "in"
+    }, {
+        "name": "Nick",
+        "status": "out"
+    }]
+}

@@ -1,0 +1,75 @@
+.grid {
+  display: grid;
+  grid: 'header header header' 'main main sidebar' 'footer footer footer';
+  grid-template-rows: 1fr auto 1fr; }
+  .grid__header {
+    grid-area: header; }
+  .grid__main {
+    grid-area: main; }
+  .grid__sidebar {
+    grid-area: sidebar; }
+  .grid__footer {
+    grid-area: footer; }
+
+body {
+  margin: 0;
+  padding: 15px;
+  background-color: #e4e4e4;
+  color: #2c2c2c; }
+
+.wrapper {
+  padding: 0 30px;
+  background-color: #fff;
+  font-family: 'Trebuchet MS', sans-serif;
+  border-radius: 4px; }
+
+.header {
+  padding: 15px 0; }
+  .header__title {
+    font-size: 40px;
+    margin: 0;
+    font-weight: normal; }
+
+.main {
+  margin: 0 30px 0 0; }
+  .main__title {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    font-weight: normal; }
+  .main__content {
+    margin: 0 0 30px 0; }
+
+.sidebar__title {
+  font-size: 28px;
+  margin: 0;
+  font-weight: normal;
+  margin-bottom: 15px; }
+
+.sidebar .employee__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.sidebar .employee__item {
+  padding: 10px 0; }
+
+.sidebar .employee__status {
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 15px;
+  width: 40px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px; }
+  .sidebar .employee__status.in {
+    background-color: #29b329; }
+  .sidebar .employee__status.out {
+    background-color: #ff4747; }
+  .sidebar .employee__status.out + .employee__name {
+    opacity: .4; }
+
+.footer .copyright span {
+  color: #666666;
+  font-size: 14px; }
